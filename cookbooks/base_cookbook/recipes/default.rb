@@ -37,12 +37,19 @@ inspec_waiver 'Consume waiver from disk location' do
 end
 
 # ====> Include InSpec Inputs to pass to Compliance Phase
+
+# Specify input(s) inline with the `inspec_input` resource
 inspec_input 'user_which_should_not_exist' do
   source({ user_which_should_not_exist: 'someuser' })
 end
 
+# Include an input file in this cookbook under compliance/inputs path
+#  Inputs could be included from another cookbook as well in this way
 include_input 'base_cookbook::kernel_min_ver' if linux?
 
+# Load an existing input file from the system at a given location, if present.
 inspec_input '/path/to/my/input.yml' if ::File.exist?('/path/to/my/input.yml')
 
+# Include the web_server default recipe.
+#  This cookbook also has Compliance Phase components configured and those will run too.
 include_recipe 'web_server' if ubuntu_platform?
