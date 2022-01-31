@@ -1,0 +1,23 @@
+name: base_linux
+title: base_linux
+maintainer: Collin McNeese
+copyright: Collin McNeese
+copyright_email: cmcneese@chef.io
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0
+supports:
+  platform: os
+
+inputs:
+- name: user_which_should_not_exist
+  description: |
+    Sample input to provide a user account which should not exist on a system
+    which will be evaluated during an InSpec test.
+  type: string
+- name: kernel_minimum_version
+  description: |
+    Minimum kernel version which is evaluated during an InSpec run.  A default
+    value is provided for this input.
+  type: numeric
+  value: 2

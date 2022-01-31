@@ -1,0 +1,10 @@
+name: base_linux_el
+title: base_linux_el
+maintainer: Collin McNeese
+copyright: Collin McNeese
+copyright_email: cmcneese@chef.io
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.1
+supports:
+- platform-family: redhat

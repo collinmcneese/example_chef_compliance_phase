@@ -1,0 +1,4 @@
+crond-service:
+  expiration_date: 2023-01-01
+  run: false
+  justification: "crond does not need to be running"

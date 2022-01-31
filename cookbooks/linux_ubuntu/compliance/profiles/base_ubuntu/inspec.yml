@@ -1,0 +1,10 @@
+name: base_ubuntu
+title: base_ubuntu
+maintainer: Collin McNeese
+copyright: Collin McNeese
+copyright_email: cmcneese@chef.io
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.1
+supports:
+- platform-name: ubuntu

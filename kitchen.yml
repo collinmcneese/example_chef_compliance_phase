@@ -1,0 +1,31 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_infra
+  product_name: chef
+  # Minimum version of 17.9.42 to include bugfixes for Compliance Phase additional methods and resources
+  product_version: 17.9.42
+  # install_strategy: always
+  # Populate configuration to enable reporting to Chef Automate from Test Kitchen
+  # client_rb:
+  #   data_collector.server_url: https://AutomateFQDN/data-collector/v0/
+  #   data_collector.token: automate_ingest_token
+  #   ssl_verify_mode: ":verify_none"
+  #   verify_api_cert: false
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-20.04
+  - name: almalinux-8
+
+suites:
+  - name: default
+    verifier:
+      inspec_tests:
+        # InSpec tests from included repository cookbooks
+        - cookbooks/base_cookbook/compliance/profiles
+    attributes:
