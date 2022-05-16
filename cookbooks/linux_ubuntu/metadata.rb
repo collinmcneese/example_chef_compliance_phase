@@ -1,7 +1,7 @@
 name 'linux_ubuntu'
 maintainer 'Collin McNeese'
 maintainer_email 'cmcneese@chef.io'
-license 'Apache-2.0'
+license 'MIT'
 description 'Installs/Configures linux_ubuntu'
 version '0.1.0'
 chef_version '>= 16.0'

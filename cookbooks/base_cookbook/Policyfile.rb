@@ -14,3 +14,6 @@ run_list 'base_cookbook::default'
 
 # Specify a custom source for a single cookbook:
 cookbook 'base_cookbook', path: '.'
+cookbook 'linux_el', path: '../linux_el'
+cookbook 'linux_ubuntu', path: '../linux_ubuntu'
+cookbook 'web_server', path: '../web_server'
