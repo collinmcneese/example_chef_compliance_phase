@@ -1,6 +1,6 @@
 name 'linux_el'
 maintainer 'Collin McNeese'
-maintainer_email 'cmcneese@chef.io'
+maintainer_email 'collin@mydevsandbox.com'
 license 'MIT'
 description 'Installs/Configures linux_el'
 version '0.1.0'

@@ -2,7 +2,7 @@ name: base_linux_el
 title: base_linux_el
 maintainer: Collin McNeese
 copyright: Collin McNeese
-copyright_email: cmcneese@chef.io
+copyright_email: collin@mydevsandbox.com
 license: MIT
 summary: An InSpec Compliance Profile
 version: 0.1.1

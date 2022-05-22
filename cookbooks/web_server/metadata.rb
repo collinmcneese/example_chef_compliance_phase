@@ -1,6 +1,6 @@
 name 'web_server'
 maintainer 'Collin McNeese'
-maintainer_email 'cmcneese@chef.io'
+maintainer_email 'collin@mydevsandbox.com'
 license 'MIT'
 description 'Installs/Configures web_server'
 version '0.1.0'
